@@ -1,0 +1,62 @@
+openapi: 3.0.2
+info:
+  title: petshop-ws-api
+  description: OpenAPI specification for petshop-ws.
+  version: 1.0.0
+servers:
+  - url: /api
+tags:
+  - name: pet
+    description: A cozy little companion.
+paths:
+  /pets:
+    post:
+      tags:
+        - pet
+      operationId: createPet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+        required: true
+      responses:
+        '200':
+          description: Pet created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+  /pets/{name}:
+    get:
+      tags:
+        - pet
+      operationId: getPet
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+            example: 'Mouse'
+      responses:
+        '200':
+          description: Pet fetched.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+components:
+  schemas:
+    Pet:
+      type: object
+      properties:
+        name:
+          type: string
+          example: 'Mouse'
+        color:
+          type: string
+          example: 'Pink'
+        favoriteFood:
+          type: string
+          example: 'Cheese'
