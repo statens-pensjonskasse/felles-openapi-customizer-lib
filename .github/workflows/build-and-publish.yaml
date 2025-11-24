@@ -6,11 +6,10 @@ on:
 
 jobs:
   build-and-publish:
-    uses: statens-pensjonskasse/github-actions-library/.github/workflows/build-library-maven.yaml@a2bc06ac35932796354f31ce92d0fc516b27a20b # v1.44.15
+    uses: statens-pensjonskasse/public-actions-library/.github/workflows/build-library-maven.yaml@abcd12074416dfabd99e00686086223bcec87f30 # v0.1.2
     permissions:
       contents: write
       packages: write
     secrets: inherit
     with:
       java-version: '21'
-      slack-channel: '#rettighet-ci'
