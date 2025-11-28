@@ -32,8 +32,8 @@
         <!-- in-house deps -->
 
         <!-- third-party deps -->
-        <swagger-core.version>2.2.40</swagger-core.version>
-        <swagger-parser-v3.version>2.1.35</swagger-parser-v3.version>
+        <swagger-core.version>2.2.41</swagger-core.version>
+        <swagger-parser-v3.version>2.1.36</swagger-parser-v3.version>
         <kotest.version>5.9.1</kotest.version>
     </properties>
 
