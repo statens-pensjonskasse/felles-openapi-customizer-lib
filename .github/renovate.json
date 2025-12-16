@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>statens-pensjonskasse/renovate-presets:daily-automerge-non-major"
+    "github>statens-pensjonskasse/renovate-presets:weekly-automerge-non-major"
   ]
 }
