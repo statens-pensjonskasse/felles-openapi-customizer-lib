@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.2</version>
+        <version>4.2.0</version>
     </parent>
 
     <groupId>no.spk.felles</groupId>
@@ -32,8 +32,8 @@
         <!-- in-house deps -->
 
         <!-- third-party deps -->
-        <swagger-core.version>2.2.55</swagger-core.version>
-        <swagger-parser-v3.version>2.1.48</swagger-parser-v3.version>
+        <swagger-core.version>2.2.56</swagger-core.version>
+        <swagger-parser-v3.version>2.1.49</swagger-parser-v3.version>
         <kotest.version>6.2.7</kotest.version>
     </properties>
 
